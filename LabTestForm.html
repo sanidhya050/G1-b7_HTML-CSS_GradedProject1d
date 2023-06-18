@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+</html>
+<head>
+    <title>Test Appointment</title>
+    <link rel="stylesheet" href="LabTestForm.css">
+</head>
+<body>
+  <form action="action.html">
+    <section>
+        <aside>
+            <img src="file:///C:/Users/HP/OneDrive/Desktop/images/lab-test.jpg" alt=" ">
+        </aside>
+        <div id='details'>
+            <article class='textin'>
+                <h2>1. Your Contact Details</h2>
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="text" name="id" placeholder="Patient Id if exists"><br>
+                <input type="number" name="cont_num" placeholder="Contact Number" required min="6666666666"
+                    max="9999999999">
+                <input type="email" name="email" placeholder="Email Id" required>
+            </article>
+
+            <article class='textin'>
+                <h2>2. Address</h2>
+                <input type="text" name="house-no" placeholder="House Number" required>
+                <input type="text" name="street" placeholder="Street" required><br>
+                <input type="text" name="area" placeholder="Area" required> <br>
+                <h3>District</h3>
+                <select name="District" id="District" required>
+                    <option value="">Choose</option>
+                    <option value="Meerut city">Meerut city</option>
+                    <option value="Meerut cantt">Meerut cantt</option>
+                    <option value="Muzaffarnagar">Muzaffarnagar</option>
+                    <option value="Bulandshahar">Bulandshahar</option>
+                    <option value="Gaziabad">Gaziabad</option>
+                    <option value="Noida ">Noida </option>
+                    <option value="Bijnor">Bijnor</option>
+                    <option value="Muradabad">Muradabad</option>
+                    <option value="Hapur">Hapur</option>
+                    <option value="Gautam Budh Nagar">Gautam Budh Nagar</option>
+                    
+                </select>
+            </article>
+
+            <article>
+                <h2>3. Choose the Test type</h2>
+                <p>Check atleast one box without full</p>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="TSH">
+                <label for="c3">Thyroid Stimulating Hormone(TSH)</label>
+                <br>
+                <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                <label for="c1">Glucose Test</label>
+            </article>
+
+
+            <article>
+                <h2>4. Do you want a hard copy of the report also?</h2>
+                <input type="radio" id="c6" name="option" value="True" required>
+                <label for="c6">Yes</label>
+                <br>
+                <input type="radio" id="c7" name="option" value="False">
+                <label for="c7">No</label>
+            </article>
+
+            
+            <article>
+                <h2>5. Select Your Comfortable Date and Time</h2>
+                <input type="datetime-local" value="datetime-local" required>
+            </article>
+
+        </div>
+
+    </section>
+    <div id='btns'>
+        <input type="reset"  value="Reset">
+        <input type="submit"  value="Submit">
+    </div>
+  </form>
+
+</body>
